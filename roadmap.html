@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4df9a730e9cb429d8a04dec16c4181c9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_4df9a730e9cb429d8a04dec16c4181c9" ></div>
+        
+</body>
+<script>    
+    
+            var map_4df9a730e9cb429d8a04dec16c4181c9 = L.map(
+                "map_4df9a730e9cb429d8a04dec16c4181c9",
+                {
+                    center: [40.7711, -73.9712],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12.5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f0caf271a5f04ddc9dd561ea091bbdf4 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4df9a730e9cb429d8a04dec16c4181c9);
+        
+    
+            var feature_group_9af0640c0ad3447ca1fafc82200d9999 = L.featureGroup(
+                {}
+            ).addTo(map_4df9a730e9cb429d8a04dec16c4181c9);
+        
+    
+            var poly_line_a8db8f494d0943fcb99de0aad3558ff9 = L.polyline(
+                [[40.723405712182505, -73.98840616262777], [40.800496066398274, -73.93208170686519]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(feature_group_9af0640c0ad3447ca1fafc82200d9999);
+        
+    
+        var popup_d9f3b3a299024d748852f1b6961e996f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c2583c00a22c4291b4f82baca10af659 = $(`<div id="html_c2583c00a22c4291b4f82baca10af659" style="width: 100.0%; height: 100.0%;"><b>First Avenue</b></div>`)[0];
+            popup_d9f3b3a299024d748852f1b6961e996f.setContent(html_c2583c00a22c4291b4f82baca10af659);
+        
+
+        poly_line_a8db8f494d0943fcb99de0aad3558ff9.bindPopup(popup_d9f3b3a299024d748852f1b6961e996f)
+        ;
+
+        
+    
+    
+            poly_line_a8db8f494d0943fcb99de0aad3558ff9.bindTooltip(
+                `<div>
+                     First Avenue
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_45c00f97d71543f8afa48bfbc791d531 = L.polyline(
+                [[40.72429282804597, -73.99083615225008], [40.804073297699865, -73.9326699394287]],
+                {"bubblingMouseEvents": true, "color": "cyan", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "cyan", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(feature_group_9af0640c0ad3447ca1fafc82200d9999);
+        
+    
+        var popup_d68d735197a346f3914143d8e8eb2ac9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c867e5acb4544a0481d3478e39acd9dc = $(`<div id="html_c867e5acb4544a0481d3478e39acd9dc" style="width: 100.0%; height: 100.0%;"><b>Second Avenue</b></div>`)[0];
+            popup_d68d735197a346f3914143d8e8eb2ac9.setContent(html_c867e5acb4544a0481d3478e39acd9dc);
+        
+
+        poly_line_45c00f97d71543f8afa48bfbc791d531.bindPopup(popup_d68d735197a346f3914143d8e8eb2ac9)
+        ;
+
+        
+    
+    
+            poly_line_45c00f97d71543f8afa48bfbc791d531.bindTooltip(
+                `<div>
+                     Second Avenue
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_81cbf424a0ac484a82164d0f55ae2c84 = L.polyline(
+                [[40.75944440223235, -73.98514827391915], [40.760138036957805, -73.98487866226235], [40.76080123301061, -73.9845238268965], [40.764057777444386, -73.98252384295633], [40.765480040383416, -73.98202582331851], [40.767471362140334, -73.98172402454712], [40.7678084088503, -73.98149895518787], [40.76826167808733, -73.98145803355187], [40.76855223405828, -73.98199514117773], [40.773038826540734, -73.98212444181029], [40.777899482073295, -73.98203866427998], [40.78255458624043, -73.98093363209614], [40.79913341225515, -73.96862183894021], [40.80296676788077, -73.967516782371], [40.84161231051161, -73.9392893265968], [40.84836378020602, -73.93784689733309]],
+                {"bubblingMouseEvents": true, "color": "teal", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "teal", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(feature_group_9af0640c0ad3447ca1fafc82200d9999);
+        
+    
+        var popup_943aace8145e448c8174f73b2205f35f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c97f420866a74437a659a766b332a403 = $(`<div id="html_c97f420866a74437a659a766b332a403" style="width: 100.0%; height: 100.0%;"><b>Broadway</b></div>`)[0];
+            popup_943aace8145e448c8174f73b2205f35f.setContent(html_c97f420866a74437a659a766b332a403);
+        
+
+        poly_line_81cbf424a0ac484a82164d0f55ae2c84.bindPopup(popup_943aace8145e448c8174f73b2205f35f)
+        ;
+
+        
+    
+    
+            poly_line_81cbf424a0ac484a82164d0f55ae2c84.bindTooltip(
+                `<div>
+                     Broadway
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_10c61d9a971748b79c8ce17520023213 = L.polyline(
+                [[40.73692534321128, -74.00554016876768], [40.739768373921024, -74.00252028685938], [40.767640931326355, -73.98223107553761]],
+                {"bubblingMouseEvents": true, "color": "lime", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lime", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(feature_group_9af0640c0ad3447ca1fafc82200d9999);
+        
+    
+        var popup_4c011dd4ad104d8eb7f5f4a449b89404 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0ee9ce668150482b99a3d332a5f950fc = $(`<div id="html_0ee9ce668150482b99a3d332a5f950fc" style="width: 100.0%; height: 100.0%;"><b>Eighth Avenue</b></div>`)[0];
+            popup_4c011dd4ad104d8eb7f5f4a449b89404.setContent(html_0ee9ce668150482b99a3d332a5f950fc);
+        
+
+        poly_line_10c61d9a971748b79c8ce17520023213.bindPopup(popup_4c011dd4ad104d8eb7f5f4a449b89404)
+        ;
+
+        
+    
+    
+            poly_line_10c61d9a971748b79c8ce17520023213.bindTooltip(
+                `<div>
+                     Eighth Avenue
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_52b86575a1f742808b20df55f58b9619 = L.polyline(
+                [[40.78149125438309, -73.98805786978386], [40.790876357991195, -73.98166465209567], [40.79265124431428, -73.98036570558497], [40.81812634903188, -73.96180518149869], [40.8222412727324, -73.95822248534994]],
+                {"bubblingMouseEvents": true, "color": "yellowgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellowgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(feature_group_9af0640c0ad3447ca1fafc82200d9999);
+        
+    
+        var popup_151bdef6abb34bc1a3c18ca418863af2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4d749b8e886c4fd2baa682545995e166 = $(`<div id="html_4d749b8e886c4fd2baa682545995e166" style="width: 100.0%; height: 100.0%;"><b>Hudson River Greenway</b></div>`)[0];
+            popup_151bdef6abb34bc1a3c18ca418863af2.setContent(html_4d749b8e886c4fd2baa682545995e166);
+        
+
+        poly_line_52b86575a1f742808b20df55f58b9619.bindPopup(popup_151bdef6abb34bc1a3c18ca418863af2)
+        ;
+
+        
+    
+    
+            poly_line_52b86575a1f742808b20df55f58b9619.bindTooltip(
+                `<div>
+                     Hudson River Greenway
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1a3528a01370455b8b483c9bc2b58116 = L.polyline(
+                [[40.74230830107884, -74.00443352261372], [40.77171980127828, -73.9830091125413]],
+                {"bubblingMouseEvents": true, "color": "springgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "springgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(feature_group_9af0640c0ad3447ca1fafc82200d9999);
+        
+    
+        var popup_4f708db0a8004975aef7659abd362fbb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8b5bdcc212544db0a6c5a234237fe0c0 = $(`<div id="html_8b5bdcc212544db0a6c5a234237fe0c0" style="width: 100.0%; height: 100.0%;"><b>Ninth Avenue</b></div>`)[0];
+            popup_4f708db0a8004975aef7659abd362fbb.setContent(html_8b5bdcc212544db0a6c5a234237fe0c0);
+        
+
+        poly_line_1a3528a01370455b8b483c9bc2b58116.bindPopup(popup_4f708db0a8004975aef7659abd362fbb)
+        ;
+
+        
+    
+    
+            poly_line_1a3528a01370455b8b483c9bc2b58116.bindTooltip(
+                `<div>
+                     Ninth Avenue
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_6a6eb02207dd42efb7528b911bd543c1 = L.featureGroup(
+                {}
+            ).addTo(map_4df9a730e9cb429d8a04dec16c4181c9);
+        
+    
+            var poly_line_f20639b9369a428cb655d11edae83c27 = L.polyline(
+                [[40.73538565102742, -73.98992526937045], [40.8106997462366, -73.93518583896693], [40.813638581569464, -73.93465269762054]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(feature_group_6a6eb02207dd42efb7528b911bd543c1);
+        
+    
+        var popup_9f5f2a0fff494c30ad9ade215cbb33ae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_91ed037111d5469b888436afa5fab7f6 = $(`<div id="html_91ed037111d5469b888436afa5fab7f6" style="width: 100.0%; height: 100.0%;"><b>Park Avenue</b></div>`)[0];
+            popup_9f5f2a0fff494c30ad9ade215cbb33ae.setContent(html_91ed037111d5469b888436afa5fab7f6);
+        
+
+        poly_line_f20639b9369a428cb655d11edae83c27.bindPopup(popup_9f5f2a0fff494c30ad9ade215cbb33ae)
+        ;
+
+        
+    
+    
+            poly_line_f20639b9369a428cb655d11edae83c27.bindTooltip(
+                `<div>
+                     Park Avenue
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1ec69ba9ad0d4097af165939963dca84 = L.polyline(
+                [[40.74159403300131, -74.00887342644668], [40.74810859774424, -74.00777910469668], [40.76657644015286, -73.99416789644388]],
+                {"bubblingMouseEvents": true, "color": "hotpink", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "hotpink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(feature_group_6a6eb02207dd42efb7528b911bd543c1);
+        
+    
+        var popup_09cc6d58b56a4503bc6fcf658c060590 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_728b3e0edab247248250bc614bba62d8 = $(`<div id="html_728b3e0edab247248250bc614bba62d8" style="width: 100.0%; height: 100.0%;"><b>Eleventh Avenue</b></div>`)[0];
+            popup_09cc6d58b56a4503bc6fcf658c060590.setContent(html_728b3e0edab247248250bc614bba62d8);
+        
+
+        poly_line_1ec69ba9ad0d4097af165939963dca84.bindPopup(popup_09cc6d58b56a4503bc6fcf658c060590)
+        ;
+
+        
+    
+    
+            poly_line_1ec69ba9ad0d4097af165939963dca84.bindTooltip(
+                `<div>
+                     Eleventh Avenue
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_49694b77813247238029fc14f721435f = L.polyline(
+                [[40.74811624550694, -74.00781162014779], [40.74965244037509, -74.0083588451224], [40.75048150398041, -74.00844470868272], [40.75431318389294, -74.00698418156148], [40.76213461919728, -74.00120139391925], [40.763201975869336, -73.99944406668632], [40.76972458839988, -73.99478819667961], [40.77165810438008, -73.99442352347215]],
+                {"bubblingMouseEvents": true, "color": "fuchsia", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "fuchsia", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(feature_group_6a6eb02207dd42efb7528b911bd543c1);
+        
+    
+        var popup_a00efa4f5734404fb2b2fe164f024eba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_444a353c82cf4caba8e2dd89faaa9991 = $(`<div id="html_444a353c82cf4caba8e2dd89faaa9991" style="width: 100.0%; height: 100.0%;"><b>Twelfth Avenue</b></div>`)[0];
+            popup_a00efa4f5734404fb2b2fe164f024eba.setContent(html_444a353c82cf4caba8e2dd89faaa9991);
+        
+
+        poly_line_49694b77813247238029fc14f721435f.bindPopup(popup_a00efa4f5734404fb2b2fe164f024eba)
+        ;
+
+        
+    
+    
+            poly_line_49694b77813247238029fc14f721435f.bindTooltip(
+                `<div>
+                     Twelfth Avenue
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_9ac6d32b687244a3a2f340a7504076c6 = L.featureGroup(
+                {}
+            ).addTo(map_4df9a730e9cb429d8a04dec16c4181c9);
+        
+    
+            var poly_line_6dd572d8cdab47088a4755990c685627 = L.polyline(
+                [[40.7283547983669, -73.9908196730996], [40.805598461063674, -73.93442936685418]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(feature_group_9ac6d32b687244a3a2f340a7504076c6);
+        
+    
+        var popup_85211eef88d64267814baedbb483319e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b7028d40d72b4c30993d124b34929bb7 = $(`<div id="html_b7028d40d72b4c30993d124b34929bb7" style="width: 100.0%; height: 100.0%;"><b>Third Avenue</b></div>`)[0];
+            popup_85211eef88d64267814baedbb483319e.setContent(html_b7028d40d72b4c30993d124b34929bb7);
+        
+
+        poly_line_6dd572d8cdab47088a4755990c685627.bindPopup(popup_85211eef88d64267814baedbb483319e)
+        ;
+
+        
+    
+    
+            poly_line_6dd572d8cdab47088a4755990c685627.bindTooltip(
+                `<div>
+                     Third Avenue
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c8dfdbbd68ab4cfb91253bc91fad5ef3 = L.polyline(
+                [[40.739565555552936, -73.98473822137845], [40.806941416877955, -73.93561003513248]],
+                {"bubblingMouseEvents": true, "color": "gold", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gold", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(feature_group_9ac6d32b687244a3a2f340a7504076c6);
+        
+    
+        var popup_3ee74603331e4012a2e818751d591462 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_83c4084748d8430fab3be3d535616e86 = $(`<div id="html_83c4084748d8430fab3be3d535616e86" style="width: 100.0%; height: 100.0%;"><b>Lexington Avenue</b></div>`)[0];
+            popup_3ee74603331e4012a2e818751d591462.setContent(html_83c4084748d8430fab3be3d535616e86);
+        
+
+        poly_line_c8dfdbbd68ab4cfb91253bc91fad5ef3.bindPopup(popup_3ee74603331e4012a2e818751d591462)
+        ;
+
+        
+    
+    
+            poly_line_c8dfdbbd68ab4cfb91253bc91fad5ef3.bindTooltip(
+                `<div>
+                     Lexington Avenue
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_07146de897d9470f996f1dc91e73f48a = L.polyline(
+                [[40.74100036839844, -73.98793195416505], [40.802544135167395, -73.94298214997873], [40.81402380116054, -73.93464713540948]],
+                {"bubblingMouseEvents": true, "color": "lightcoral", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightcoral", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(feature_group_9ac6d32b687244a3a2f340a7504076c6);
+        
+    
+        var popup_27503559494349e3991217bb82e109e3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_384b5c45302b43818249bd83d7cb905a = $(`<div id="html_384b5c45302b43818249bd83d7cb905a" style="width: 100.0%; height: 100.0%;"><b>Madison Avenue</b></div>`)[0];
+            popup_27503559494349e3991217bb82e109e3.setContent(html_384b5c45302b43818249bd83d7cb905a);
+        
+
+        poly_line_07146de897d9470f996f1dc91e73f48a.bindPopup(popup_27503559494349e3991217bb82e109e3)
+        ;
+
+        
+    
+    
+            poly_line_07146de897d9470f996f1dc91e73f48a.bindTooltip(
+                `<div>
+                     Madison Avenue
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6cfed69c6816442393ca617ca62385a7 = L.polyline(
+                [[40.731490534222175, -73.99697999080996], [40.81750363469339, -73.93427108087135]],
+                {"bubblingMouseEvents": true, "color": "peru", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "peru", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(feature_group_9ac6d32b687244a3a2f340a7504076c6);
+        
+    
+        var popup_c0644224c3be4bc6b94afc42e1617b2e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_acd2986963884d6a8ff37f07c9ff3e2b = $(`<div id="html_acd2986963884d6a8ff37f07c9ff3e2b" style="width: 100.0%; height: 100.0%;"><b>Fifth Avenue</b></div>`)[0];
+            popup_c0644224c3be4bc6b94afc42e1617b2e.setContent(html_acd2986963884d6a8ff37f07c9ff3e2b);
+        
+
+        poly_line_6cfed69c6816442393ca617ca62385a7.bindPopup(popup_c0644224c3be4bc6b94afc42e1617b2e)
+        ;
+
+        
+    
+    
+            poly_line_6cfed69c6816442393ca617ca62385a7.bindTooltip(
+                `<div>
+                     Fifth Avenue
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0833814223d0474ca4fec5866f7ce12b = L.polyline(
+                [[40.72180587642259, -74.00530076140355], [40.731701439510374, -74.0010740769981], [40.76566799259137, -73.97629984388166]],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(feature_group_9ac6d32b687244a3a2f340a7504076c6);
+        
+    
+        var popup_4a9c06ab2a1b4a56ba082de7b0404754 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_abf6ce99c76f47d5a51e372a15910570 = $(`<div id="html_abf6ce99c76f47d5a51e372a15910570" style="width: 100.0%; height: 100.0%;"><b>Sixth Avenue</b></div>`)[0];
+            popup_4a9c06ab2a1b4a56ba082de7b0404754.setContent(html_abf6ce99c76f47d5a51e372a15910570);
+        
+
+        poly_line_0833814223d0474ca4fec5866f7ce12b.bindPopup(popup_4a9c06ab2a1b4a56ba082de7b0404754)
+        ;
+
+        
+    
+    
+            poly_line_0833814223d0474ca4fec5866f7ce12b.bindTooltip(
+                `<div>
+                     Sixth Avenue
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d5b609d5791b40bdb104664caf95c38a = L.polyline(
+                [[40.72946927547037, -74.00522969837589], [40.7398141531992, -73.99880765393416], [40.76678944724996, -73.97914934325613]],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "brown", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(feature_group_9ac6d32b687244a3a2f340a7504076c6);
+        
+    
+        var popup_61485f9048aa452b836bad3b57790bb6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_15bb484bc8c94fa4b26b73dd17201994 = $(`<div id="html_15bb484bc8c94fa4b26b73dd17201994" style="width: 100.0%; height: 100.0%;"><b>Seventh Avenue</b></div>`)[0];
+            popup_61485f9048aa452b836bad3b57790bb6.setContent(html_15bb484bc8c94fa4b26b73dd17201994);
+        
+
+        poly_line_d5b609d5791b40bdb104664caf95c38a.bindPopup(popup_61485f9048aa452b836bad3b57790bb6)
+        ;
+
+        
+    
+    
+            poly_line_d5b609d5791b40bdb104664caf95c38a.bindTooltip(
+                `<div>
+                     Seventh Avenue
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_09e6c0effc5b4fafabef080c298f7a70 = L.polyline(
+                [[40.74279579623444, -74.00773993046678], [40.77168693168624, -73.98677120411554]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(feature_group_9ac6d32b687244a3a2f340a7504076c6);
+        
+    
+        var popup_518a9b806d014aa79eec69cac5f7dd88 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e5c0fa89edd5442db68a6dbfbca37b3b = $(`<div id="html_e5c0fa89edd5442db68a6dbfbca37b3b" style="width: 100.0%; height: 100.0%;"><b>Tenth Avenue</b></div>`)[0];
+            popup_518a9b806d014aa79eec69cac5f7dd88.setContent(html_e5c0fa89edd5442db68a6dbfbca37b3b);
+        
+
+        poly_line_09e6c0effc5b4fafabef080c298f7a70.bindPopup(popup_518a9b806d014aa79eec69cac5f7dd88)
+        ;
+
+        
+    
+    
+            poly_line_09e6c0effc5b4fafabef080c298f7a70.bindTooltip(
+                `<div>
+                     Tenth Avenue
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var layer_control_7e5ed0c7825843dca19be077f16acd85 = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_f0caf271a5f04ddc9dd561ea091bbdf4,
+                },
+                overlays :  {
+                    "protected bicycle lane" : feature_group_9af0640c0ad3447ca1fafc82200d9999,
+                    "two-way roadway" : feature_group_6a6eb02207dd42efb7528b911bd543c1,
+                    "None" : feature_group_9ac6d32b687244a3a2f340a7504076c6,
+                },
+            };
+            L.control.layers(
+                layer_control_7e5ed0c7825843dca19be077f16acd85.base_layers,
+                layer_control_7e5ed0c7825843dca19be077f16acd85.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_4df9a730e9cb429d8a04dec16c4181c9);
+        
+</script>
