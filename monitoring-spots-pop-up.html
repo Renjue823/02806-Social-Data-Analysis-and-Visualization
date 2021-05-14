@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4161dc99bc334e07b353a56d431264c3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_4161dc99bc334e07b353a56d431264c3" ></div>
+        
+</body>
+<script>    
+    
+            var map_4161dc99bc334e07b353a56d431264c3 = L.map(
+                "map_4161dc99bc334e07b353a56d431264c3",
+                {
+                    center: [40.7831, -73.9712],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_85333b75bcc94463a3be7fe3a551fc87 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4161dc99bc334e07b353a56d431264c3);
+        
+    
+            var circle_marker_4f751b9b253c4f24b49061df30d8b03c = L.circleMarker(
+                [40.727963, -73.988133],
+                {"bubblingMouseEvents": true, "color": "royalblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "royalblue", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4161dc99bc334e07b353a56d431264c3);
+        
+    
+            var marker_bff83832a1b44373ac955d7d94cc00c2 = L.marker(
+                [40.727963, -73.988133],
+                {}
+            ).addTo(map_4161dc99bc334e07b353a56d431264c3);
+        
+    
+            var icon_152cfa39d62e4ec69f44a7708cb64ec6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bff83832a1b44373ac955d7d94cc00c2.setIcon(icon_152cfa39d62e4ec69f44a7708cb64ec6);
+        
+    
+        var popup_46cdb9371d1043a589605305ca42ebff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5fc940356a3c4edd8e3ea9c0edce8e9c = $(`<div id="html_5fc940356a3c4edd8e3ea9c0edce8e9c" style="width: 100.0%; height: 100.0%;">Second Avenue at E7 St.</div>`)[0];
+            popup_46cdb9371d1043a589605305ca42ebff.setContent(html_5fc940356a3c4edd8e3ea9c0edce8e9c);
+        
+
+        marker_bff83832a1b44373ac955d7d94cc00c2.bindPopup(popup_46cdb9371d1043a589605305ca42ebff)
+        ;
+
+        
+    
+    
+            var circle_marker_72d24fa0134d42b6a3a09adb4eb843fc = L.circleMarker(
+                [40.72983, -73.991424],
+                {"bubblingMouseEvents": true, "color": "royalblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "royalblue", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4161dc99bc334e07b353a56d431264c3);
+        
+    
+            var marker_cf7f1e8eaf9c40fe979da09fe69ef8a1 = L.marker(
+                [40.72983, -73.991424],
+                {}
+            ).addTo(map_4161dc99bc334e07b353a56d431264c3);
+        
+    
+            var icon_b8730e02882545bb8e20ae0eba045929 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cf7f1e8eaf9c40fe979da09fe69ef8a1.setIcon(icon_b8730e02882545bb8e20ae0eba045929);
+        
+    
+        var popup_184eba30d97549c39107358cd76ce70b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e6200962d04e4cd284b872999198477e = $(`<div id="html_e6200962d04e4cd284b872999198477e" style="width: 100.0%; height: 100.0%;">Lafayette Street at Astor Pl.</div>`)[0];
+            popup_184eba30d97549c39107358cd76ce70b.setContent(html_e6200962d04e4cd284b872999198477e);
+        
+
+        marker_cf7f1e8eaf9c40fe979da09fe69ef8a1.bindPopup(popup_184eba30d97549c39107358cd76ce70b)
+        ;
+
+        
+    
+    
+            var circle_marker_e0fdb4f34da84fc685e34caed3b91725 = L.circleMarker(
+                [40.736015, -73.993635],
+                {"bubblingMouseEvents": true, "color": "royalblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "royalblue", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4161dc99bc334e07b353a56d431264c3);
+        
+    
+            var marker_1d92ca87b7784278b4ec4190499e5171 = L.marker(
+                [40.736015, -73.993635],
+                {}
+            ).addTo(map_4161dc99bc334e07b353a56d431264c3);
+        
+    
+            var icon_8dea202f569f49238faff063385f4bdb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1d92ca87b7784278b4ec4190499e5171.setIcon(icon_8dea202f569f49238faff063385f4bdb);
+        
+    
+        var popup_af2b44654ee24b269edaaed4f71a790d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_397b89250b654839a3d038d9a364cd37 = $(`<div id="html_397b89250b654839a3d038d9a364cd37" style="width: 100.0%; height: 100.0%;">Fifth Avenue at 14 St.</div>`)[0];
+            popup_af2b44654ee24b269edaaed4f71a790d.setContent(html_397b89250b654839a3d038d9a364cd37);
+        
+
+        marker_1d92ca87b7784278b4ec4190499e5171.bindPopup(popup_af2b44654ee24b269edaaed4f71a790d)
+        ;
+
+        
+    
+    
+            var circle_marker_79c6af1fde534aa9b85c78dcff884205 = L.circleMarker(
+                [40.742897, -73.992805],
+                {"bubblingMouseEvents": true, "color": "royalblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "royalblue", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4161dc99bc334e07b353a56d431264c3);
+        
+    
+            var marker_d88e40584f2846bd9aa3465b90bd9874 = L.marker(
+                [40.742897, -73.992805],
+                {}
+            ).addTo(map_4161dc99bc334e07b353a56d431264c3);
+        
+    
+            var icon_8a9024f1cb12444eaf050b3a4760c4f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d88e40584f2846bd9aa3465b90bd9874.setIcon(icon_8a9024f1cb12444eaf050b3a4760c4f7);
+        
+    
+        var popup_5249f4b2fc124d80a392ad9b0637f54c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a8a84b8653834475b909c25fe2b58c3d = $(`<div id="html_a8a84b8653834475b909c25fe2b58c3d" style="width: 100.0%; height: 100.0%;">Sixth Avenue at W23 St.</div>`)[0];
+            popup_5249f4b2fc124d80a392ad9b0637f54c.setContent(html_a8a84b8653834475b909c25fe2b58c3d);
+        
+
+        marker_d88e40584f2846bd9aa3465b90bd9874.bindPopup(popup_5249f4b2fc124d80a392ad9b0637f54c)
+        ;
+
+        
+    
+    
+            var circle_marker_93770894ae254bba80239080289b5c1c = L.circleMarker(
+                [40.745293, -73.988767],
+                {"bubblingMouseEvents": true, "color": "royalblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "royalblue", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4161dc99bc334e07b353a56d431264c3);
+        
+    
+            var marker_b45479966edd4d3e9ee2bfbfdde500f0 = L.marker(
+                [40.745293, -73.988767],
+                {}
+            ).addTo(map_4161dc99bc334e07b353a56d431264c3);
+        
+    
+            var icon_e1b1f8fbcd5b4e638538644cde9baffe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b45479966edd4d3e9ee2bfbfdde500f0.setIcon(icon_e1b1f8fbcd5b4e638538644cde9baffe);
+        
+    
+        var popup_639c41e5a5df4a7aa39072189dc0471a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_009fb1f071294999a8989e3be790b3ac = $(`<div id="html_009fb1f071294999a8989e3be790b3ac" style="width: 100.0%; height: 100.0%;">Broadway at W28 St.</div>`)[0];
+            popup_639c41e5a5df4a7aa39072189dc0471a.setContent(html_009fb1f071294999a8989e3be790b3ac);
+        
+
+        marker_b45479966edd4d3e9ee2bfbfdde500f0.bindPopup(popup_639c41e5a5df4a7aa39072189dc0471a)
+        ;
+
+        
+    
+    
+            var circle_marker_8e647faf05734649b224e09e5e7008c3 = L.circleMarker(
+                [40.748435, -73.996206],
+                {"bubblingMouseEvents": true, "color": "royalblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "royalblue", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4161dc99bc334e07b353a56d431264c3);
+        
+    
+            var marker_358b6e9748ed46d892c220919d5b9dab = L.marker(
+                [40.748435, -73.996206],
+                {}
+            ).addTo(map_4161dc99bc334e07b353a56d431264c3);
+        
+    
+            var icon_403d77ee61c044e4b10fd64f24198409 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_358b6e9748ed46d892c220919d5b9dab.setIcon(icon_403d77ee61c044e4b10fd64f24198409);
+        
+    
+        var popup_684d918df3c74f5c976c6e29c237c643 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eef33ada2955494a97b907f688606718 = $(`<div id="html_eef33ada2955494a97b907f688606718" style="width: 100.0%; height: 100.0%;">Eighth Avenue at W28 St.</div>`)[0];
+            popup_684d918df3c74f5c976c6e29c237c643.setContent(html_eef33ada2955494a97b907f688606718);
+        
+
+        marker_358b6e9748ed46d892c220919d5b9dab.bindPopup(popup_684d918df3c74f5c976c6e29c237c643)
+        ;
+
+        
+    
+    
+            var circle_marker_5938a36ae0804a3db1d651e3229819d3 = L.circleMarker(
+                [40.77619, -73.949855],
+                {"bubblingMouseEvents": true, "color": "royalblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "royalblue", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4161dc99bc334e07b353a56d431264c3);
+        
+    
+            var marker_5fb497959dd444bf8a6adc4a50c7be61 = L.marker(
+                [40.77619, -73.949855],
+                {}
+            ).addTo(map_4161dc99bc334e07b353a56d431264c3);
+        
+    
+            var icon_9cedbdd144d2452d9d2a4077024cbc1f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5fb497959dd444bf8a6adc4a50c7be61.setIcon(icon_9cedbdd144d2452d9d2a4077024cbc1f);
+        
+    
+        var popup_48f36fd50a7d46bbad945303c6858890 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bb36a097016c4eb8bb8a1811b514028a = $(`<div id="html_bb36a097016c4eb8bb8a1811b514028a" style="width: 100.0%; height: 100.0%;">First Avenue at E85 St.</div>`)[0];
+            popup_48f36fd50a7d46bbad945303c6858890.setContent(html_bb36a097016c4eb8bb8a1811b514028a);
+        
+
+        marker_5fb497959dd444bf8a6adc4a50c7be61.bindPopup(popup_48f36fd50a7d46bbad945303c6858890)
+        ;
+
+        
+    
+    
+            var circle_marker_edfe7f1e0ad245e5abe401eb60370967 = L.circleMarker(
+                [40.789748, -73.966117],
+                {"bubblingMouseEvents": true, "color": "royalblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "royalblue", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4161dc99bc334e07b353a56d431264c3);
+        
+    
+            var marker_8063f9d7d5d144f3bd3e2d129059c6ec = L.marker(
+                [40.789748, -73.966117],
+                {}
+            ).addTo(map_4161dc99bc334e07b353a56d431264c3);
+        
+    
+            var icon_095657d0bfd547f59d77a9cf2a83ed6b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8063f9d7d5d144f3bd3e2d129059c6ec.setIcon(icon_095657d0bfd547f59d77a9cf2a83ed6b);
+        
+    
+        var popup_0b0ec0af4b5d47aa935605e8afc00320 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d07e6f84eef94d8da99e1721e9072087 = $(`<div id="html_d07e6f84eef94d8da99e1721e9072087" style="width: 100.0%; height: 100.0%;">Central Park West at W93 St.</div>`)[0];
+            popup_0b0ec0af4b5d47aa935605e8afc00320.setContent(html_d07e6f84eef94d8da99e1721e9072087);
+        
+
+        marker_8063f9d7d5d144f3bd3e2d129059c6ec.bindPopup(popup_0b0ec0af4b5d47aa935605e8afc00320)
+        ;
+
+        
+    
+    
+            var circle_marker_77d0ae6725f24a9c9d5f675144b45ba2 = L.circleMarker(
+                [40.801269, -73.953865],
+                {"bubblingMouseEvents": true, "color": "royalblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "royalblue", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4161dc99bc334e07b353a56d431264c3);
+        
+    
+            var marker_06cf670225dc4b209083b330cc31b907 = L.marker(
+                [40.801269, -73.953865],
+                {}
+            ).addTo(map_4161dc99bc334e07b353a56d431264c3);
+        
+    
+            var icon_bcc9defa09e2477584b63677482faa86 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_06cf670225dc4b209083b330cc31b907.setIcon(icon_bcc9defa09e2477584b63677482faa86);
+        
+    
+        var popup_cfdcbb65a77547438acaa94460949bf1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ea468d3ec8cd41abb09d974e2edc9304 = $(`<div id="html_ea468d3ec8cd41abb09d974e2edc9304" style="width: 100.0%; height: 100.0%;">Adam Clayton at W113th St. (NB+SB)</div>`)[0];
+            popup_cfdcbb65a77547438acaa94460949bf1.setContent(html_ea468d3ec8cd41abb09d974e2edc9304);
+        
+
+        marker_06cf670225dc4b209083b330cc31b907.bindPopup(popup_cfdcbb65a77547438acaa94460949bf1)
+        ;
+
+        
+    
+    
+            var circle_marker_5864aedfd30a465f8ce3e5d8380778df = L.circleMarker(
+                [40.845373, -73.940536],
+                {"bubblingMouseEvents": true, "color": "royalblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "royalblue", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4161dc99bc334e07b353a56d431264c3);
+        
+    
+            var marker_977eb44ad31c4e429ea7de6cf8d1647a = L.marker(
+                [40.845373, -73.940536],
+                {}
+            ).addTo(map_4161dc99bc334e07b353a56d431264c3);
+        
+    
+            var icon_ee2f7a49806244e3bd480b9d7d18b06d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_977eb44ad31c4e429ea7de6cf8d1647a.setIcon(icon_ee2f7a49806244e3bd480b9d7d18b06d);
+        
+    
+        var popup_5000a80e955c4155975de023c2197c69 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_724ca1d32f94413290176cec63a5fb8d = $(`<div id="html_724ca1d32f94413290176cec63a5fb8d" style="width: 100.0%; height: 100.0%;">Fort Washington at W173 St. (NB +SB)</div>`)[0];
+            popup_5000a80e955c4155975de023c2197c69.setContent(html_724ca1d32f94413290176cec63a5fb8d);
+        
+
+        marker_977eb44ad31c4e429ea7de6cf8d1647a.bindPopup(popup_5000a80e955c4155975de023c2197c69)
+        ;
+
+        
+    
+    
+            var circle_marker_5ab98a7ba4804a23b3966f8da6ff944d = L.circleMarker(
+                [40.718709, -73.9741],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4161dc99bc334e07b353a56d431264c3);
+        
+    
+            var marker_6e763399663546439f97f20a4783c756 = L.marker(
+                [40.718709, -73.9741],
+                {}
+            ).addTo(map_4161dc99bc334e07b353a56d431264c3);
+        
+    
+            var icon_08edca78d72c4258b5835437af84bc73 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6e763399663546439f97f20a4783c756.setIcon(icon_08edca78d72c4258b5835437af84bc73);
+        
+    
+        var popup_7972b1f2c70541d69aa620d237a635ef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fc8abf4657cf49ddbfb17b7229cc3ff7 = $(`<div id="html_fc8abf4657cf49ddbfb17b7229cc3ff7" style="width: 100.0%; height: 100.0%;">East River at E Houston St.</div>`)[0];
+            popup_7972b1f2c70541d69aa620d237a635ef.setContent(html_fc8abf4657cf49ddbfb17b7229cc3ff7);
+        
+
+        marker_6e763399663546439f97f20a4783c756.bindPopup(popup_7972b1f2c70541d69aa620d237a635ef)
+        ;
+
+        
+    
+    
+            var circle_marker_cc26e0abfbb14e82ad3742d114dcd310 = L.circleMarker(
+                [40.73534, -74.010569],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4161dc99bc334e07b353a56d431264c3);
+        
+    
+            var marker_35f733a5f559437e9ca293e2cbce8a4b = L.marker(
+                [40.73534, -74.010569],
+                {}
+            ).addTo(map_4161dc99bc334e07b353a56d431264c3);
+        
+    
+            var icon_65bc3348e1c049f1a065d4e0db07a30f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_35f733a5f559437e9ca293e2cbce8a4b.setIcon(icon_65bc3348e1c049f1a065d4e0db07a30f);
+        
+    
+        var popup_3a8095e4d72d475387391dbab4f92acc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2442b71603624aca9069e2c881da16b9 = $(`<div id="html_2442b71603624aca9069e2c881da16b9" style="width: 100.0%; height: 100.0%;">Route 9A at 11th St.</div>`)[0];
+            popup_3a8095e4d72d475387391dbab4f92acc.setContent(html_2442b71603624aca9069e2c881da16b9);
+        
+
+        marker_35f733a5f559437e9ca293e2cbce8a4b.bindPopup(popup_3a8095e4d72d475387391dbab4f92acc)
+        ;
+
+        
+    
+    
+            var circle_marker_5fbcf156a31848ab9b8856a5896fc83e = L.circleMarker(
+                [40.777374, -73.942531],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4161dc99bc334e07b353a56d431264c3);
+        
+    
+            var marker_55d14bf54d34497cb2ac6156e9ae5944 = L.marker(
+                [40.777374, -73.942531],
+                {}
+            ).addTo(map_4161dc99bc334e07b353a56d431264c3);
+        
+    
+            var icon_9c9ed8e315034c9799aa12035fc2b3b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_55d14bf54d34497cb2ac6156e9ae5944.setIcon(icon_9c9ed8e315034c9799aa12035fc2b3b3);
+        
+    
+        var popup_47b303a710a842db95181f8cb56d2059 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5ca6dc798e3e45969a698b3418fe6d94 = $(`<div id="html_5ca6dc798e3e45969a698b3418fe6d94" style="width: 100.0%; height: 100.0%;">East River Greenway at E90th St.</div>`)[0];
+            popup_47b303a710a842db95181f8cb56d2059.setContent(html_5ca6dc798e3e45969a698b3418fe6d94);
+        
+
+        marker_55d14bf54d34497cb2ac6156e9ae5944.bindPopup(popup_47b303a710a842db95181f8cb56d2059)
+        ;
+
+        
+    
+    
+            var circle_marker_f4688ac322984474abdc86e4224980ea = L.circleMarker(
+                [40.786529, -73.984584],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4161dc99bc334e07b353a56d431264c3);
+        
+    
+            var marker_87f41e7bea7d47769f2a765ea6c60e74 = L.marker(
+                [40.786529, -73.984584],
+                {}
+            ).addTo(map_4161dc99bc334e07b353a56d431264c3);
+        
+    
+            var icon_aa77f85354504d0f8f6d854ceaecb042 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_87f41e7bea7d47769f2a765ea6c60e74.setIcon(icon_aa77f85354504d0f8f6d854ceaecb042);
+        
+    
+        var popup_c49abb2998434bada1f53b19acf4dcfc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ade55e3cc2e34f33ba81d4b0c0cc688a = $(`<div id="html_ade55e3cc2e34f33ba81d4b0c0cc688a" style="width: 100.0%; height: 100.0%;">Route 9A Greenway at 80th St.</div>`)[0];
+            popup_c49abb2998434bada1f53b19acf4dcfc.setContent(html_ade55e3cc2e34f33ba81d4b0c0cc688a);
+        
+
+        marker_87f41e7bea7d47769f2a765ea6c60e74.bindPopup(popup_c49abb2998434bada1f53b19acf4dcfc)
+        ;
+
+        
+    
+    
+            var circle_marker_4ed6dbd24cf64bbb9c1ab7c2e59709fa = L.circleMarker(
+                [40.818769, -73.961127],
+                {"bubblingMouseEvents": true, "color": "royalblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "royalblue", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4161dc99bc334e07b353a56d431264c3);
+        
+    
+            var marker_26bdc89f3a1240868418ed0e1924df3e = L.marker(
+                [40.818769, -73.961127],
+                {}
+            ).addTo(map_4161dc99bc334e07b353a56d431264c3);
+        
+    
+            var icon_0b51d458663c464d84455736ee5370d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_26bdc89f3a1240868418ed0e1924df3e.setIcon(icon_0b51d458663c464d84455736ee5370d6);
+        
+    
+        var popup_13e82fd612614db3b94125b09bd667a5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ac180b9bc4b247abaf25a7486b2abd64 = $(`<div id="html_ac180b9bc4b247abaf25a7486b2abd64" style="width: 100.0%; height: 100.0%;">Route 9A Greenway at 125th St.</div>`)[0];
+            popup_13e82fd612614db3b94125b09bd667a5.setContent(html_ac180b9bc4b247abaf25a7486b2abd64);
+        
+
+        marker_26bdc89f3a1240868418ed0e1924df3e.bindPopup(popup_13e82fd612614db3b94125b09bd667a5)
+        ;
+
+        
+    
+</script>
